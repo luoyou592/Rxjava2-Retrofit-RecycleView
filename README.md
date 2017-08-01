@@ -53,7 +53,7 @@
   public interface MovieService {
    	@GET("top250")
    //一般使用Retrofit为Call<ResponseInfo>,而这里将使用Rxjava2
-  Observable<ResponseInfo> getMovieList(@Query("start") int 					start, @Query("count") int count);
+  Observable<ResponseInfo> getMovieList(@Query("start") in	start, @Query("count") int count);
   }
   ```
 
